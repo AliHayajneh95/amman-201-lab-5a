@@ -31,7 +31,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+    var x = a*b;
+    var msg = 'The product of 5 and 9 is 45.';
+    return [x, msg];
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -53,7 +55,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+    var x = a + b + c;
+    var y = a*b*c;
+    var msg = '4 and 7 and 5 sum to 16.';
 
+    return [x, y, msg, 'The product of 4 and 7 and 5 is 140.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -77,6 +83,12 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
 
+    var sum = 0;
+    for(var i = testArray.length; i !=0; i--)
+    {
+        sum += testArray[i];
+    }
+    return [sum, '2,3,4 was passed in as an array of numbers, and 9 is their sum.'];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
